@@ -17,3 +17,9 @@ Applied projects that combine multiple modules — good candidates for a portfol
    - Script that pulls new rows, formats them, and emails a summary — demonstrates automation skills beyond formulas.
 
 Add a `project-name/` folder here for each one once started, with the sheet link and a short README.
+[Personal & Sales Data Hub..pdf](https://github.com/user-attachments/files/30376188/Personal.Sales.Data.Hub.pdf)
+
+
+
+<img width="309" height="190" alt="image" src="https://github.com/user-attachments/assets/1a3e53d9-9589-427c-913b-dd26664409d4" />
+
