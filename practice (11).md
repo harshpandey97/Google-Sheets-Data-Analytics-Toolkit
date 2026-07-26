@@ -1,8 +1,4 @@
-Here is the complete guide and structured notes to master the **Best Practices** module in Google Sheets.
-
-Create a new tab in your spreadsheet, name it **`Best Practices`**, and follow these guidelines:
-
----
+ 
 
 ## 📖 Best Practices Module Notes & Action Items
 
