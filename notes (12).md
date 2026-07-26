@@ -2,7 +2,7 @@
 
 Create a Google Sheet for this module and link it here:
 
-**Sheet link:** _(paste link once created)_
+Sheet link:(https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing)
 
 ## Exercises
 
@@ -11,5 +11,4 @@ Create a Google Sheet for this module and link it here:
 - [ ] Convert a shared 'Filter' to a personal Filter View
 
 
-
-https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing
+ 
