@@ -2,7 +2,7 @@
 
 Create a Google Sheet for this module and link it here:
 
-**Sheet link:** _(paste link once created)_
+**Sheet link:- https://docs.google.com/spreadsheets/d/1wSvw8xmH1Ivyxan3XfeYgyR6p3gakCLnvbmGqppsApI/edit?usp=sharing
 
 ## Exercises
 
