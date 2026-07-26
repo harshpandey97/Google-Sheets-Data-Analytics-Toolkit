@@ -1,4 +1,8 @@
-📖 Automation Module Notes & Practice Guide
+                                 📖 Automation Module Notes & Practice Guide
+
+
+
+
 Exercise 1: Record a Macro for Automated Formatting
 Concept: A Macro records your repetitive actions (formatting, alignment, font changes) into reusable code without requiring you to write any Apps Script manually.
 
