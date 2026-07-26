@@ -34,6 +34,12 @@ By the end of this module, you will be able to:
 
 ---
 
+
+
+<img width="540" height="293" alt="image" src="https://github.com/user-attachments/assets/08e5d7c8-7db8-4163-9df9-40f9c8c5655d" />
+
+
+
 # Exercise 1 – Column Chart
 
 ### Goal
