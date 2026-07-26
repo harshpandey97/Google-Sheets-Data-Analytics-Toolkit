@@ -2,7 +2,8 @@
 
 Create a Google Sheet for this module and link it here:
 
-**Sheet link:** _(paste link once created)_
+ Sheet link:https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing
+
 
 ## Exercises
 
@@ -11,4 +12,4 @@ Create a Google Sheet for this module and link it here:
 - [ ] Replace a nested IF chain with SWITCH for a grading scheme
 
 
-https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing
+ 
