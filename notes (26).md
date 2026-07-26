@@ -320,6 +320,9 @@ Create a dashboard for the following data:
 
 Build:
 
+<img width="550" height="300" alt="image" src="https://github.com/user-attachments/assets/e31cf8ef-0741-42f9-89e6-914c60483d60" />
+
+
 * 📊 Bar Chart for Sales
 * 📈 Column Chart for Profit
 * 🥧 Pie Chart for Sales Distribution
