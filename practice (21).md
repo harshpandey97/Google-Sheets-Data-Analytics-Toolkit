@@ -1,79 +1,362 @@
-# Data Entry & Formatting — Practice Notes
+# 📊 Charts & Graphs in Google Sheets
 
-Module: Data Entry & Formatting (Google Sheets)
-
----
-
-## Exercise 1: Format a sample table (bold headers, borders, alternating row colors)
-
-**Sample table structure:**
-
-| Employee ID | Name | Department | Sales Amount ($) |
-|---|---|---|---|
-| 101 | Rohan Sharma | Sales | 45000 |
-| 102 | Priya Singh | Marketing | 62000 |
-| 103 | Amit Kumar | IT | 28000 |
-
-**Steps in Google Sheets:**
-
-1. **Bold headers** — Select header row → `Ctrl+B` (or Format → Bold). Optionally add a fill color: select row → click the paint-bucket icon → pick a dark color → set text color to white for contrast.
-2. **Borders** — Select the full table range → click the Borders icon in the toolbar → choose "All borders." Use a light gray thin border so it doesn't overpower the data.
-3. **Alternating row colors** — Select the data range (excluding header, or including it) → `Format → Alternating colors` → pick a built-in theme or "Custom colors" → set header style and two alternating band colors → Done.
-
-**Why it matters:** this is the baseline "readable sheet" look — recruiters and reviewers judge data hygiene by this first.
+<p align="center">
+<img src="https://img.shields.io/badge/Google%20Sheets-Charts%20%26%20Graphs-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"/>
+<img src="https://img.shields.io/badge/Level-Beginner%20→%20Intermediate-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+</p>
 
 ---
 
-## Exercise 2: Conditional formatting — highlight values above/below a threshold
+# 📖 Overview
 
-**Steps:**
+Charts transform raw numbers into meaningful visual insights.
 
-1. Select the numeric column (e.g., `Sales Amount`, range `D2:D16`).
-2. `Format → Conditional formatting` → in the side panel, under "Format rules," choose **"Greater than"** → enter `50000` → set fill color (green) → Done.
-3. Click **"+ Add another rule"** → choose **"Less than"** → enter `20000` → set fill color (red) → Done.
+Instead of reading thousands of rows, charts help identify:
 
-**Result:** any Sales Amount above 50000 turns green, below 20000 turns red — a quick visual scan for outliers, without touching the raw numbers.
+- 📈 Trends
+- 📊 Comparisons
+- 🥧 Proportions
+- 📉 Growth & Decline
+- 🎯 KPIs
+
+Google Sheets provides interactive visualizations that are widely used in Data Analytics, MIS Reporting, Business Intelligence, Marketing Analytics, Finance, and Operations.
 
 ---
 
-## Exercise 3: Custom formula in conditional formatting — highlight duplicate rows
+# 🧠 Visualization Workflow
 
-Google Sheets' built-in duplicate check only works well on a single column. To flag **whole duplicate rows** (all columns match), you need a custom formula rule.
-
-**Steps:**
-
-1. Select the full data range, e.g. `A2:D16`.
-2. `Format → Conditional formatting` → under "Format rules," choose **"Custom formula is."**
-3. Enter this formula:
-   ```
-   =COUNTIFS($A$2:$A$16,$A2,$B$2:$B$16,$B2,$C$2:$C$16,$C2,$D$2:$D$16,$D2)>1
-   ```
-4. Set fill color (amber/yellow works well) → Done.
-
-**How the formula works:**
-- `COUNTIFS` checks all four columns (ID, Name, Department, Sales Amount) together for each row.
-- If a row's exact combination appears **more than once** anywhere in the range, `COUNTIFS(...)>1` returns `TRUE`, and the whole row gets highlighted.
-- The `$` locks the range so it doesn't shift as the rule is applied row by row, while `$A2` (no `$` on the row number) lets the check move down with each row.
-
-**Simpler variant** — if you only want to flag duplicate IDs (single column), just use:
+```text
+                 Raw Data
+                     │
+                     ▼
+           Clean & Organize Data
+                     │
+                     ▼
+              Select Data Range
+                     │
+                     ▼
+               Insert Chart
+                     │
+                     ▼
+           Customize Visualization
+                     │
+                     ▼
+            Business Decision
 ```
-=COUNTIF($A$2:$A$16,A2)>1
+
+---
+
+# 🎯 Learning Objectives
+
+After completing this module, you will be able to:
+
+- ✅ Create Column Charts
+- ✅ Create Bar Charts
+- ✅ Create Line Charts
+- ✅ Create Pie Charts
+- ✅ Create Combo Charts
+- ✅ Use SPARKLINE()
+- ✅ Customize Chart Styles
+- ✅ Build Dashboard Visualizations
+
+---
+
+# 📊 Dataset Used
+
+| Month | Revenue | Profit Margin (%) |
+|--------|---------|-------------------|
+| Jan | 15000 | 18 |
+| Feb | 17500 | 20 |
+| Mar | 19000 | 22 |
+| Apr | 22000 | 21 |
+| May | 24500 | 24 |
+| Jun | 27000 | 26 |
+| Jul | 28500 | 25 |
+| Aug | 30000 | 28 |
+| Sep | 31500 | 27 |
+| Oct | 34000 | 29 |
+| Nov | 36000 | 30 |
+| Dec | 39000 | 32 |
+
+---
+
+# 📈 Exercise 1 — Monthly Sales Column Chart
+
+### Objective
+
+Visualize monthly revenue using a Column Chart.
+
+### Steps
+
+1. Select **Month** and **Revenue**
+2. Go to
+
 ```
-applied to range `A2:A16`.
+Insert → Chart
+```
+
+3. Choose
+
+```
+Column Chart
+```
+
+4. Customize
+
+- Chart Title
+- Axis Titles
+- Data Labels
+- Legend
 
 ---
 
-## Quick reference — menu paths used
+### Example
 
-| Task | Menu path |
-|---|---|
-| Bold / fill color | `Format → Bold` or paint-bucket icon |
-| Borders | Toolbar → Borders icon |
-| Alternating colors | `Format → Alternating colors` |
-| Threshold highlight | `Format → Conditional formatting → Greater than / Less than` |
-| Custom formula highlight | `Format → Conditional formatting → Custom formula is` |
+
+::contentReference[oaicite:0]{index=0}
+
 
 ---
 
-## Sheet link
-`(paste your Google Sheet link here once created)`
+# 📊 Exercise 2 — Revenue vs Profit Margin (Combo Chart)
+
+### Objective
+
+Compare Revenue and Profit Margin simultaneously.
+
+### Steps
+
+```
+Select Month + Revenue + Profit Margin
+```
+
+↓
+
+```
+Insert
+```
+
+↓
+
+```
+Chart
+```
+
+↓
+
+```
+Combo Chart
+```
+
+---
+
+### Configure
+
+Revenue
+
+✅ Column
+
+Profit Margin
+
+✅ Line
+
+Profit Margin Axis
+
+✅ Right Axis
+
+---
+
+### Visualization
+
+```text
+Revenue
+
+██████
+██████████
+██████████████
+
+Profit Margin
+
+────────●────────●────────●
+```
+
+---
+
+# ⚡ Exercise 3 — SPARKLINE()
+
+## What is SPARKLINE?
+
+A Sparkline is a tiny chart inside a single cell.
+
+Instead of large charts, Sparklines quickly show trends.
+
+Example:
+
+| Sales Trend |
+|--------------|
+| 📈 |
+| 📉 |
+| 📊 |
+
+---
+
+## Formula
+
+```excel
+=SPARKLINE(D2:F2)
+```
+
+---
+
+### Column Sparkline
+
+```excel
+=SPARKLINE(D2:F2,{"charttype","column"})
+```
+
+---
+
+### Win/Loss Sparkline
+
+```excel
+=SPARKLINE(D2:F2,{"charttype","winloss"})
+```
+
+---
+
+### Color Sparkline
+
+```excel
+=SPARKLINE(D2:F2,{"color","green"})
+```
+
+---
+
+### Example
+
+| Product A | Product B | Product C | Trend |
+|------------|------------|------------|-------|
+|120|135|140|📈|
+|125|140|145|📈|
+|130|145|150|📈|
+
+---
+
+# 📊 Types of Charts
+
+| Chart | Best Use |
+|---------|----------|
+| 📊 Column | Compare categories |
+| 📈 Line | Time trends |
+| 📉 Area | Cumulative growth |
+| 🥧 Pie | Percentage contribution |
+| 🍩 Donut | Part-to-whole |
+| 📌 Scatter | Correlation |
+| 📦 Bar | Rankings |
+| 📋 Combo | Compare two metrics |
+| ⚡ Sparkline | Mini trend |
+
+---
+
+# 💡 Best Practices
+
+✅ Use meaningful titles
+
+✅ Label axes
+
+✅ Avoid excessive colors
+
+✅ Highlight key KPIs
+
+✅ Keep charts simple
+
+✅ Use consistent formatting
+
+---
+
+# 🚀 Real-World Applications
+
+- Sales Dashboard
+- Financial Reports
+- Marketing Analytics
+- Customer Analysis
+- Inventory Reports
+- HR Dashboard
+- Operations Dashboard
+- Business Intelligence
+- Executive KPI Reports
+
+---
+
+# 🎯 Practice Exercises
+
+- [x] Build a Monthly Sales Column Chart
+- [x] Build a Revenue vs Profit Margin Combo Chart
+- [x] Add SPARKLINE() Trend Column
+- [ ] Create a Pie Chart
+- [ ] Create a Line Chart
+- [ ] Create a Scatter Plot
+- [ ] Build a Mini Dashboard
+
+---
+
+# 📝 Interview Questions
+
+### Q1. When should you use a Column Chart?
+
+To compare values across different categories.
+
+---
+
+### Q2. Why use a Combo Chart?
+
+To compare two metrics with different scales (e.g., Revenue and Profit Margin).
+
+---
+
+### Q3. What is a Sparkline?
+
+A miniature chart displayed inside a single cell that shows trends without occupying much space.
+
+---
+
+### Q4. Which chart is best for trends over time?
+
+📈 Line Chart
+
+---
+
+### Q5. Which chart is best for showing proportions?
+
+🥧 Pie Chart
+
+---
+
+# 📂 Deliverables
+
+- ✔ Google Sheets Workbook
+- ✔ Monthly Sales Column Chart
+- ✔ Revenue vs Profit Margin Combo Chart
+- ✔ SPARKLINE() Examples
+- ✔ Dashboard Ready Visualizations
+
+---
+
+## 🔗 Google Sheet
+
+```text
+https://docs.google.com/spreadsheets/d/your-sheet-id
+```
+
+*(Replace with your shared Google Sheet link.)*
+
+---
+
+<div align="center">
+
+### ⭐ If you found this module helpful, don't forget to star the repository!
+
+**Made with ❤️ by Harsh Pandey**
+
+</div>
