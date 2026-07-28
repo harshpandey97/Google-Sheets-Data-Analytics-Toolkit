@@ -64,9 +64,3 @@ Set up your **`Data Tools`** tab by creating a simple table in cells **`A1:C6`**
 3. Google Sheets will display a grayed-out **Smart Fill** suggestion for the rest of the column.
 4. Press **`Ctrl + Enter`** (or click the green checkmark) to auto-complete the pattern for all rows!
 
-
----
-
-### Submission Reminder
-
-When finished, click the green **Share** button (top-right), ensure access is set to **Anyone with the link**, copy the link, and paste it into your assignment portal!
