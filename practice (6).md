@@ -13,6 +13,19 @@
 </p>
 
 ---
+ Video Playback:- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/f6e5357b-9ca0-4ee9-99b4-0d0a4c707fca?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ Slide deck :- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/55148b9b-3680-4c56-bc5a-caffafaff40e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ Audio playbook :- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/cd596d38-c96f-4741-8a47-baa7abad575e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ infographic :- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/0a127165-2950-42eb-bcd7-e08d3c9dfafd?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ artifact :- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/8004cc7b-eace-491e-9102-3b882adebd0d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ report :- https://notebook.google.com/notebook/25d6463b-b583-4627-85f5-3f4f5ed2a4ba/artifact/368178b9-e191-4669-afb2-88feb0c42481?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_
+
+ 
 
 # 📚 Table of Contents
 
