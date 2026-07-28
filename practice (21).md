@@ -345,13 +345,7 @@ A miniature chart displayed inside a single cell that shows trends without occup
 
 ## 🔗 Google Sheet
 
-```text
-https://docs.google.com/spreadsheets/d/your-sheet-id
-```
-
-*(Replace with your shared Google Sheet link.)*
-
----
+ https://docs.google.com/spreadsheets/d/1SpaKUFD7VabcxKMNOZibbnh8QecsPhgLgLtGXdrALd4/edit?usp=sharing
 
 <div align="center">
 
