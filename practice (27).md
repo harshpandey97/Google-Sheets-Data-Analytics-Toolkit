@@ -74,9 +74,6 @@ applied to range `A2:A16`.
 | Custom formula highlight | `Format → Conditional formatting → Custom formula is` |
 
 ---
-<img width="183" height="118" alt="image" src="https://github.com/user-attachments/assets/43904c3e-1e13-4a9f-bbf7-1b7b79c1dede" />
-<img width="293" height="160" alt="image" src="https://github.com/user-attachments/assets/38bd6a7b-8cef-4676-aa62-60a0a186a435" />
-<img width="286" height="184" alt="image" src="https://github.com/user-attachments/assets/758c6a4c-af2c-437e-8b8a-20fcfc64e5f1" />
-
+ 
 ## Sheet link
  (https://docs.google.com/spreadsheets/d/1zLn2KRby2kuu_Hppk69KqTLDDAx0VGMnQJp-yCV4rr0/edit?usp=sharing)
