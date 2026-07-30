@@ -2,7 +2,8 @@
 
 Create a Google Sheet for this module and link it here:
 
-**Sheet link:** _(paste link once created)_
+**Sheet link:https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing
+
 
 ## Exercises
 
@@ -11,4 +12,4 @@ Create a Google Sheet for this module and link it here:
 - [ ] Practice selecting a range with click-drag, Shift+Click, and typing a range in the Name Box
 
 
-https://docs.google.com/spreadsheets/d/1el-V3ntx0i6GeLpcpmJ-usP5FZFCCjigyA-1AwdlVgQ/edit?usp=sharing
+ 
