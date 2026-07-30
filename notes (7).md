@@ -1,141 +1,387 @@
-                                 📖 Automation Module Notes & Practice Guide
+<div align="center">
 
+# 🤖 Google Sheets Automation Mastery
 
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=30&duration=3500&pause=1200&color=00C853&center=true&vCenter=true&width=1000&lines=Google+Sheets+Automation+Mastery;Macros+%7C+Apps+Script+%7C+Triggers;Spreadsheet+Automation+Portfolio;Beginner+%E2%9E%9C+Advanced;Built+by+Harsh+Pandey+%F0%9F%9A%80"/>
 
+<br>
 
-Exercise 1: Record a Macro for Automated Formatting
-Concept: A Macro records your repetitive actions (formatting, alignment, font changes) into reusable code without requiring you to write any Apps Script manually.
+<img src="https://img.shields.io/badge/Status-Work%20in%20Progress-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Google-Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"/>
+<img src="https://img.shields.io/badge/Apps-Script-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/Automation-JavaScript-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Open%20Source-Learning-success?style=for-the-badge"/>
 
-Step-by-Step Instructions:
-Prepare Raw Data Dump:
+</div>
 
-In cells A1:C4, enter raw data:
+---
 
-A1:C1: Item | Quantity | Price
+# 🚀 About This Repository
 
-A2:C2: Keyboard | 15 | 45
+Welcome to my **Google Sheets Automation Mastery** repository.
 
-A3:C3: Mouse | 30 | 20
+This repository documents my journey of learning **Spreadsheet Automation**, starting from recording simple **Macros** to building **Google Apps Script solutions**, creating **Custom Functions**, and scheduling **Automatic Workflows** using **Time-Driven Triggers**.
 
-A4:C4: Monitor | 10 | 150
+Rather than simply claiming automation skills, this repository demonstrates them through **hands-on practice**, **well-documented notes**, **mini projects**, and **real-world business use cases**.
 
-Start Recording:
+---
 
-Go to Extensions → Macros → Record macro.
+# 🎯 Learning Objectives
 
-Select Use relative references (this allows you to apply the macro to any range, not just A1:C4).
+By completing this repository, I will be able to:
 
-Perform Formatting Actions:
+- ✅ Record reusable Macros
+- ✅ Automate repetitive formatting
+- ✅ Write Google Apps Script
+- ✅ Build Custom Spreadsheet Functions
+- ✅ Schedule automated tasks
+- ✅ Improve spreadsheet productivity
+- ✅ Create portfolio-ready automation projects
 
-Highlight A1:C1 → set fill color to Dark Blue, text color to White, and make text Bold.
+---
 
-Highlight C2:C4 → set format to Currency (Format > Number > Currency).
+# 🛠️ Tech Stack
 
-Highlight A1:C4 → apply All Borders.
+<p align="center">
 
-Save Macro:
+<img src="https://skillicons.dev/icons?i=javascript,github,vscode"/>
 
-Click Save in the bottom Macro panel.
+<img src="https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"/>
 
-Name the macro: FormatDataDump.
+<img src="https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge"/>
 
-Assign a shortcut if prompted (e.g., Ctrl + Alt + Shift + 1) and click Save.
+</p>
 
-Exercise 2: Write a Custom Apps Script Function (=DISCOUNT)
-Concept: Custom functions allow you to extend Google Sheets' built-in formulas using JavaScript in Google Apps Script.
+---
 
-Step-by-Step Instructions:
-Open Apps Script Editor:
+# 📂 Repository Structure
 
-In the top menu, click Extensions → Apps Script.
+```text
+Google-Sheets-Automation/
+│
+├── 📁 Notes
+│   ├── Automation Module Notes.md
+│   ├── Apps Script Notes.md
+│   └── Macro Guide.md
+│
+├── 📁 Practice
+│   ├── Macro Exercise
+│   ├── Custom Function Exercise
+│   ├── Trigger Exercise
+│   └── Mini Project
+│
+├── 📁 Assets
+│
+├── README.md
+│
+└── LICENSE
+```
 
-Delete any default code in the editor (Code.gs).
+---
 
-Paste Custom Function Code:
+# 📚 Learning Roadmap
 
-JavaScript
-/**
- * Calculates the discounted price given a base price and discount percentage.
- * 
- * @param {number} price The original price of the item.
- * @param {number} pct The discount percentage (e.g., 10 for 10% or 0.10).
- * @return The final discounted price.
- * @customfunction
- */
-function DISCOUNT(price, pct) {
-  if (typeof price !== 'number' || typeof pct !== 'number') {
-    return "Invalid Input";
-  }
+| Module | Topic | Status |
+|---------|-------|--------|
+| 📌 1 | Macros | ✅ |
+| 📌 2 | Apps Script | ✅ |
+| 📌 3 | Custom Functions | ✅ |
+| 📌 4 | Time-Driven Triggers | ✅ |
+| 📌 5 | Spreadsheet Automation | ⏳ |
+| 📌 6 | Mini Automation Project | ⏳ |
 
-  // Convert percentage if entered as a whole number (e.g., 10 instead of 0.10)
-  var discountDecimal = pct > 1 ? pct / 100 : pct;
+---
 
-  return price - (price * discountDecimal);
-}
-Save Script:
+# 📖 Module 1 — Macros
 
-Click the Save icon (floppy disk) at the top or press Ctrl + S.
+## 📌 What You'll Learn
 
-Test Function in Sheet:
+- Recording Macros
+- Relative References
+- Formatting Automation
+- Keyboard Shortcuts
+- Reusing Macros
 
-Return to your Automation tab.
+---
 
-In cell E1, type Original Price → in E2, enter 100.
+## 🧪 Exercise
 
-In cell F1, type Discount % → in F2, enter 15.
+Automatically format a sales table by:
 
-In cell G1, type Final Price → in cell G2, enter the custom formula:
+✔ Applying Header Color
 
-Excel
-=DISCOUNT(E2, F2)
-Result: Cell G2 displays 85.
+✔ Bold Text
 
-Exercise 3: Set Up a Time-Driven Trigger (Daily Execution)
-Concept: Triggers allow Apps Script to execute automatically on a scheduled basis (e.g., daily, hourly) without manual intervention.
+✔ Currency Format
 
-Step-by-Step Instructions:
-Add Daily Task Code to Apps Script:
+✔ Borders
 
-Reopen the Apps Script editor (Extensions > Apps Script).
+✔ Saving Macro
 
-Add the following function below your =DISCOUNT function:
+---
 
-JavaScript
-function dailyAutomatedTask() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Automation");
-  if (sheet) {
-    sheet.getRange("I1").setValue("Last Automated Run: " + new Date().toLocaleString());
-  }
-}
-Save the script (Ctrl + S).
+## 💼 Business Example
 
-Configure Time-Driven Trigger:
+Imagine a company exports sales reports every morning.
 
-On the left sidebar of the Apps Script editor, click the Triggers icon (looks like an alarm clock Θ).
+Instead of spending **5 minutes formatting**, a macro performs the same task in **5 seconds**.
 
-Click + Add Trigger (bottom-right corner).
+---
 
-Configure options:
+# 📖 Module 2 — Google Apps Script
 
-Choose which function to run: dailyAutomatedTask
+Google Apps Script is Google's JavaScript platform for automating Google Workspace.
 
-Select event source: Time-driven
+It enables developers and analysts to automate:
 
-Select type of time based trigger: Day timer
+- Google Sheets
+- Gmail
+- Docs
+- Slides
+- Forms
+- Google Drive
 
-Select time of day: Choose preferred hour interval (e.g., Midnight to 1am or 8am to 9am).
+---
 
-Click Save (you may be prompted to grant authorization permissions for your Google account).
+## Skills Covered
 
-Final Check & Submission
-Ensure the Automation tab contains:
+- JavaScript Basics
+- SpreadsheetApp
+- Sheet Object
+- Range Object
+- Cell Operations
+- Custom Functions
 
-Formatted sales data table (Macro output).
+---
 
-Working =DISCOUNT() custom formula.
+# 🧠 Custom Function
 
-Running/configured Apps Script trigger.
+Example
 
-Click Share (top-right corner) → Set access to Anyone with the link.
+```javascript
+=DISCOUNT(price, percentage)
+```
 
-Click Copy link and submit your link!
+### Features
+
+- Supports percentages like **15** or **0.15**
+- Handles invalid inputs
+- Returns discounted price
+
+---
+
+# 💼 Business Use Case
+
+Retail Pricing
+
+```
+Original Price : $500
+
+Discount : 20%
+
+Result : $400
+```
+
+---
+
+# 📖 Module 3 — Time Driven Triggers
+
+Automate Google Sheets without opening them.
+
+Examples
+
+- Daily Reports
+- Weekly Reports
+- Dashboard Refresh
+- Timestamp Updates
+- Scheduled Emails
+
+---
+
+## Trigger Workflow
+
+```text
+Time Trigger
+      │
+      ▼
+Apps Script
+      │
+      ▼
+Update Spreadsheet
+      │
+      ▼
+Dashboard Refreshed
+```
+
+---
+
+# 📊 Automation Workflow
+
+```text
+Raw Data
+
+      │
+
+      ▼
+
+Macro
+
+      │
+
+      ▼
+
+Apps Script
+
+      │
+
+      ▼
+
+Custom Function
+
+      │
+
+      ▼
+
+Trigger
+
+      │
+
+      ▼
+
+Automated Spreadsheet
+```
+
+---
+
+# 💡 Business Applications
+
+- 📈 Sales Reporting
+- 📦 Inventory Tracking
+- 👨‍💼 HR Reports
+- 💰 Finance Automation
+- 📊 KPI Dashboards
+- 📧 Automated Email Reports
+- 📅 Daily Report Scheduler
+
+---
+
+# 🧠 Apps Script Objects
+
+| Object | Purpose |
+|---------|----------|
+| SpreadsheetApp | Access spreadsheet |
+| Sheet | Access worksheet |
+| Range | Access cells |
+| getValue() | Read values |
+| setValue() | Write values |
+| getRange() | Select cells |
+| getSheetByName() | Select sheet |
+
+---
+
+# 🎯 Mini Project
+
+## Automated Sales Dashboard
+
+### Features
+
+- Import raw sales data
+- Run formatting macro
+- Apply custom discount
+- Generate KPIs
+- Update timestamp
+- Refresh automatically
+- Interactive Dashboard
+
+---
+
+# 📝 Interview Questions
+
+✔ What is a Macro?
+
+✔ Difference between Macro and Apps Script?
+
+✔ What are Triggers?
+
+✔ Explain Custom Functions.
+
+✔ What is SpreadsheetApp?
+
+✔ Difference between Manual and Automated Reporting?
+
+---
+
+# 🏆 Skills Demonstrated
+
+- Google Sheets
+- Spreadsheet Automation
+- Apps Script
+- JavaScript
+- Business Reporting
+- Macros
+- Automation
+- Dashboard Development
+- Problem Solving
+- Data Cleaning
+
+---
+
+# 📈 Repository Progress
+
+```text
+██████████████████████████░░░░░░
+
+Progress : 80%
+```
+
+---
+
+# 🌟 Future Improvements
+
+- [ ] Email Automation
+- [ ] Inventory Automation
+- [ ] HR Automation
+- [ ] Google Forms Integration
+- [ ] Gmail Notifications
+- [ ] Invoice Generator
+- [ ] Dynamic Dashboard
+- [ ] AI Assisted Automation
+- [ ] Expense Tracker
+- [ ] Project Tracker
+
+---
+
+# 📊 Repository Stats
+
+| Category | Progress |
+|-----------|----------|
+| Notes | ✅ Complete |
+| Practice | ✅ Complete |
+| Apps Script | ✅ Complete |
+| Automation | 🚧 In Progress |
+| Dashboard | 🚧 In Progress |
+
+---
+
+# 🤝 Connect With Me
+
+<div align="center">
+
+## Harsh Pandey
+
+### 💼 Data Analyst • BI Analyst • Automation Enthusiast
+
+📧 **harshpandey6012@gmail.com**
+
+🔗 **LinkedIn**  https://linkedin.com/in/harsh-pandey-395a10237
+
+🐙 **GitHub**  https://github.com/harshpandey97
+
+---
+
+### ⭐ If this repository helped you, consider giving it a Star!
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3200&pause=1000&color=00C853&center=true&vCenter=true&width=900&lines=Automating+Spreadsheets+One+Script+at+a+Time...;Learning+JavaScript+for+Google+Workspace...;Building+Portfolio+Projects...;Future+Data+Analyst+%7C+BI+Analyst+%7C+Automation+Engineer"/>
+
+</div>
